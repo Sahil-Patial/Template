@@ -5,10 +5,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "Employee")
-public class Employee {
+public class Employee implements Serializable {
 
     @Id
     @Column(name="emp_id")

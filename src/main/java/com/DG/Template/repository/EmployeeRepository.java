@@ -2,7 +2,14 @@ package com.DG.Template.repository;
 
 import com.DG.Template.model.Employee;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
-public interface EmployeeRepository extends JpaRepository<Employee, Long> {
+
+import java.util.List;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+
+//    List<Employee> findAll();
 
 }
